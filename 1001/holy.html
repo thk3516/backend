@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat repellat ab qui placeat, vero quos laborum in, consequatur dolorem, animi excepturi nesciunt doloremque dolor beatae voluptate laboriosam. Odio, accusamus odit illo nam unde cumque recusandae officiis earum quos ex beatae nemo quibusdam, quis perferendis facere dolorum quo sequi error harum! Possimus quae autem dolorum cumque reiciendis, explicabo maiores numquam? Asperiores voluptate ea autem iste nisi voluptas natus non voluptates, accusantium quos ipsum ad quaerat impedit doloremque animi rerum odit voluptatum! Tenetur qui deleniti consequuntur quibusdam cumque rem voluptate doloribus veniam possimus? Recusandae quasi fugit facere rem omnis quam officia.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+           <a href=" http://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

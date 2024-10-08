@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <form action="">
+        <fieldset> 
+            <!-- 선 사이에 글자가 써짐 -->
+            <legend>상품선택</legend>
+        </fieldset>
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul id="shopping">
+                <li>
+<label for="prod">주문상품</label>
+<input type="text" id="prod" value="상품용 3kg">
+                </li>
+                <li>
+                    <lable for="user-name">이름</lable>
+                    <input type="text" name="user-name" id="user-name" required>
+                </li>
+                <!--placeholder 안내글, required 필수입력하라고 뜸  --> 
+                <li>
+                    <lable for="r-phone">연락처</lable>
+                    <input type="text" name="r-phone" id="r-phone" required>
+                    placeholder="-빼고 입력(01088564854)"
+                </li>
+                <li>
+                    <lable for="r-email">이메일</lable>
+                    <input type="email" name="r-email" id="r-email"
+                </li>
+                <li>
+                    <lable for="r-addr">배송주소</lable>
+                    <input type="text" name="r-addr" id="r-addr" required>
+                </li>
+                <li>
+                    <lable for="d-day">배송 지정</lable>
+                    <input type="date" name="d-day" id="d-day"
+                </li>
+            </ul>
+        </fieldset>
+        <div id="button">
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+*{margin: 0;padding: 0;}
+#container{
+    width: 1200px;
+    border: 10px solid #333;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 120px;
+    background-color: cadetblue;
+}
+nav{
+    height: 70px;
+    background-color: chocolate;
+}
+nav ul{list-style: none;}
+nav ul li{
+    float: left;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+nav ul li a{ /*a는 인라인요소라 넓이 높이 불가능. 그래서 디플 블록으로 가능하게함*/
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px; /*높이와 같은값주면 세로중앙정렬*/
+    text-align: center;
+    text-decoration: none; /*밑줄없애기*/
+    color: #fff;
+}
+nav ul li a:hover{
+    background-color: yellow;
+    color: #000;
+    border-radius: 50%;
+    /* text-decoration: underline; */
+}
+.main{
+    overflow: hidden;
+    /* 또는 height:600px*/
+}
+aside{
+    width: 300px;
+    height: 600px;
+    background-color: burlywood;
+    float: left;
+}
+section{
+    width: 900px;
+    height: 600px;
+    background-color: cornflowerblue;
+    float: left;
+}
+footer{
+    /* clear: both;  */
+    width: 100%;
+    height: 100px;
+    background-color: darkblue;
+    margin-top: 300px;
+}
